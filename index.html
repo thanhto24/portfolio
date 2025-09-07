@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh - Creative Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- FontAwesome & Devicon for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="cyber-glitch">LOADING</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div id="particles-js"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-text">T</span>
+        <span class="logo-subtext">hanh</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+        <li>
+          <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="intro-line">
+            <span class="greeting">Hello, I'm</span>
+          </div>
+          <div class="name-container">
+            <h1 class="main-name">
+              <span class="char">T</span>
+              <span class="char">h</span>
+              <span class="char">a</span>
+              <span class="char">n</span>
+              <span class="char">h</span>
+            </h1>
+          </div>
+          <div class="role-container">
+            <h2 class="role-text">
+              <span class="role-prefix">I'm a</span>
+              <span id="typing" class="typing-text"></span>
+              <span class="cursor-blink">|</span>
+            </h2>
+          </div>
+          <div class="hero-description">
+            <p>Crafting digital experiences with passion and precision</p>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-elements">
+            <div class="float-item" data-speed="2">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="float-item" data-speed="3">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="float-item" data-speed="1.5">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="float-item" data-speed="4">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-container">
+        <div class="about-left">
+          <div class="about-image-container">
+            <div class="image-frame">
+              <img
+                src="https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/544394089_753568157570781_3265408154912905660_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=0Ki0RGAcnGsQ7kNvwFpQ9wd&_nc_oc=Adkx6FNmvBFprdOqx7e_b9d9Gr5CZadJDLh_1lDcD-6mij0FdMkCiSA71D3tUFB7cf0&_nc_zt=23&_nc_ht=scontent.fsgn5-2.fna&_nc_gid=WAbnzrKsTNX6o_88w7rIAw&oh=00_AfYSNI0onWYHjvcx2Nt7rU2G919-YAu-ct-Ps6Ww3HhGNg&oe=68C1F5AF"
+                alt="Thanh's Profile"
+              />
+              <div class="image-overlay"></div>
+            </div>
+            <div class="experience-badge">
+              <span class="exp-number">2+</span>
+              <span class="exp-text">Years Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-content">
+            <div class="about-intro">
+              <h3>Passionate Developer & Creative Thinker</h3>
+              <p>
+                As a passionate software engineering student with expertise in
+                AI and full-stack development, I am committed to contributing my
+                skills and continuously growing as a developer, driven by my
+                love for creating impactful and innovative solutions.
+              </p>
+              <h3>Education</h3>
+              <p>
+                <strong>University of Science - HCMUS</strong> (2022 - 2026)<br />
+                Bachelor of Software Engineering &nbsp; | &nbsp; GPA: 3.68 / 4.0
+              </p>
+              <h3>ACHIEVEMENTS & AWARDS</h3>
+              <p>
+                <i class="fa-solid fa-star"></i> Selected member of the National
+                Excellent Student Team <br />
+                <i class="fa-solid fa-medal"></i> Gold Medal in the Traditional
+                30/4 Southern Olympic Competition <br />
+                <i class="fa-solid fa-trophy"></i> Top 1% of highest scorers
+                nationwide in the VNUHCM Academic Competency Test <br />
+                <i class="fa-solid fa-ranking-star"></i> Ranked in the Top 100
+                on the VNOI (Vietnam Olympiad in Informatics) server
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="34">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="7">0</span>
+                <span class="stat-label">Programming languages</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-label">% Dedication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skills-categories">
+          <!-- Programming Languages -->
+          <div class="skill-category" data-category="languages">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="devicon-c-plain colored"></i>
+                <h4>C</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <h4>C++</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-csharp-plain colored"></i>
+                <h4>C#</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-java-plain colored"></i>
+                <h4>Java</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-python-plain colored"></i>
+                <h4>Python</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <h4>JavaScript</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-typescript-plain colored"></i>
+                <h4>TypeScript</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="skill-category" data-category="frameworks">
+            <div class="category-header">
+              <i class="fas fa-layer-group"></i>
+              <h3>Frameworks & Libraries</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="devicon-react-original colored"></i>
+                <h4>React</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-nodejs-plain colored"></i>
+                <h4>Node.js</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-express-original colored"></i>
+                <h4>Express.js</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-spring-plain colored"></i>
+                <h4>Spring Boot</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-fastapi-plain"></i>
+                <h4>FastAPI</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-flask-original"></i>
+                <h4>Flask</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-tailwindcss-plain colored"></i>
+                <h4>Tailwind</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Appium</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Cloud -->
+          <div class="skill-category" data-category="databases">
+            <div class="category-header">
+              <i class="fas fa-database"></i>
+              <h3>Databases & Cloud</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="devicon-mysql-plain colored"></i>
+                <h4>MySQL</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-sqlite-plain colored"></i>
+                <h4>SQLite</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-postgresql-plain colored"></i>
+                <h4>PostgreSQL</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h4>SQL Server</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-mongodb-plain colored"></i>
+                <h4>MongoDB</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-firebase-plain colored"></i>
+                <h4>Firebase</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-supabase-plain colored"></i>
+                <h4>Supabase</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-amazonwebservices-plain colored"></i>
+                <h4>AWS</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Software Engineering -->
+          <div class="skill-category" data-category="engineering">
+            <div class="category-header">
+              <i class="fas fa-cogs"></i>
+              <h3>Software Engineering</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fas fa-cube"></i>
+                <h4>OOP</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-project-diagram"></i>
+                <h4>DSA</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-sitemap"></i>
+                <h4>Design Patterns</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-plug"></i>
+                <h4>RESTful API</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-network-wired"></i>
+                <h4>Microservices</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category" data-category="tools">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="devicon-github-original"></i>
+                <h4>GitHub</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-code-branch"></i>
+                <h4>CI/CD</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-docker-plain colored"></i>
+                <h4>Docker</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-unity-original"></i>
+                <h4>Unity</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-vial"></i>
+                <h4>Postman</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-book"></i>
+                <h4>Jupyter Notebook</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-figma-plain colored"></i>
+                <h4>Figma</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-nginx-plain colored"></i>
+                <h4>Nginx</h4>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-apachekafka-plain"></i>
+                <h4>Kafka</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4>JMeter</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-bug"></i>
+                <h4>Katalon</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-gamepad"></i>
+                <h4>Craftland</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Others -->
+          <div class="skill-category" data-category="others">
+            <div class="category-header">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Others</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fas fa-drafting-compass"></i>
+                <h4>System Design</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-check-circle"></i>
+                <h4>Testing</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-laptop"></i>
+                <h4>Cross-platform Development</h4>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-bolt"></i>
+                <h4>Performance Optimization</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-container">
+        <!-- Project 1: THREAD -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/thread.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/thanhto24/ThreadClone"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=d7YTOqyRwPw&feature=youtu.be"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-globe"></i> Web App
+            </div>
+            <h3>THREAD</h3>
+            <p>
+              A clone of the Threads social app with core features built using
+              pure HTML, CSS, JavaScript, and server-side rendering.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">EJS</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: TIKTOK -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/tiktok.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/vtai2834/MobileApp---Group08---HCMUS---22KTPM1"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?si=4czszIAfF9BMcrRB&v=DXtMfQ2JnE4&feature=youtu.be"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-mobile-alt"></i> Mobile App
+            </div>
+            <h3>TIKTOK</h3>
+            <p>
+              A TikTok clone app where users can record, upload, and watch short
+              videos with interactive features like like, comment, and follow.
+              Includes AI-based recommendations and content management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">XML</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Android Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI VIDEO OF LITERARY WORKS -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/ai_video.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/PineGithub19/TKPM_Project"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://youtu.be/V9iz58P-7fo"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="https://youtube.com/playlist?list=PLN67_fjzBvhV2_hqHf2iquH8z5ZHywrIs&si=WFWwwsGAR-EPy9CZ"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fa fa-list"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-magic"></i> AI & Web
+            </div>
+            <h3>AI VIDEO OF LITERARY WORKS</h3>
+            <p>
+              A web app that transforms literary texts into AI-generated videos
+              with visuals, animations, and voiceovers. Users can input stories
+              and receive complete narrated videos powered by generative AI.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">Stable Diffusion</span>
+              <span class="tech-tag">FFmpeg</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: TRADING VIEW -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/trade.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/mareZ-noob/bainansu"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://youtu.be/nvpfl1IUrqM"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-chart-line"></i> Trading Platform
+            </div>
+            <h3>TRADING VIEW</h3>
+            <p>
+              A TradingView-like web platform with microservices, supporting
+              real-time trading (Binance API), secure payments (VNPAY), trading
+              bots (Kafka, backtesting, AI), and authentication with Keycloak.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">ReactJS</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Nginx</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Online Book Store -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/bookstore.png')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/PhuocPhat1005/Online_Book_Store_Web.git"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=-wloHUp86EU"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-shopping-cart"></i> E-commerce
+            </div>
+            <h3>Online Book Store</h3>
+            <p>
+              An e-commerce platform for browsing, purchasing, and reviewing
+              books with personalized recommendations and admin management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: POS App -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/posapp.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/thanhto24/PosApp_Window_22KTPM1"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=wKFr_z9iaWM&feature=youtu.be"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-cash-register"></i> Desktop App
+            </div>
+            <h3>POS App</h3>
+            <p>
+              A desktop application to manage products, process sales, and track
+              transactions with real-time data updates.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">XAML</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">VietQR API</span>
+              <span class="tech-tag">GHN API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Wumpus World Game AI -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/wumpus.png')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/PhuocPhat1005/Project_2_AI_Wumpus_World_Game"
+                  class="project-link"
+                  target="_blank"
+                  title="GitHub Repo"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=LvsKcd263B4"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-brain"></i> AI &amp; Game
+            </div>
+            <h3>Wumpus World Game AI</h3>
+            <p>
+              Logical agent for an extended 10×10 Wumpus World with pits,
+              Wumpus, gold, poisonous gas, and healing potions. Shows percepts,
+              KB updates, actions, and final score with step-by-step
+              visualization.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pygame</span>
+              <span class="tech-tag">PySAT</span>
+              <span class="tech-tag">Logical Agent</span>
+              <span class="tech-tag">Windows</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: AI Delivery System -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/deli_system.png')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/PhuocPhat1005/Project_1_AI_Delivery_System_HCMUS"
+                  class="project-link"
+                  target="_blank"
+                  title="GitHub Repo"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=8O4jLFzmkPg"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-map-marked-alt"></i> Search & AI
+            </div>
+            <h3>AI Delivery System Searching</h3>
+            <p>
+              Path-finding system for HCMUS Logistic Co. LTD — find optimal
+              delivery routes on a 2D city map. Implements blind and heuristic
+              searches with extensions for tolls, fuel limits, and multiple
+              agents.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">A* / BFS / DFS / UCS</span>
+              <span class="tech-tag">Heuristic Search</span>
+              <span class="tech-tag">Pygame (GUI)</span>
+              <span class="tech-tag">Simulation</span>
+              <span class="tech-tag">Windows</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Project Design Pattern (HCMUS) -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/design_pattern.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/PhuocPhat1005/Project_Design_Pattern_HCMUS"
+                  class="project-link"
+                  target="_blank"
+                  title="GitHub Repo"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=AUKowyjpIHE"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-project-diagram"></i> OOP / Design Patterns
+            </div>
+            <h3>Project Design Pattern (HCMUS)</h3>
+            <p>
+              A group project explaining and implementing two design patterns:
+              <strong>Adapter</strong> (structural) and
+              <strong>Mediator</strong> (behavioral). Includes slides, report,
+              demo video and source code in C++.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Adapter</span>
+              <span class="tech-tag">Mediator</span>
+              <span class="tech-tag">UML</span>
+              <span class="tech-tag">Slides</span>
+              <span class="tech-tag">Report</span>
+            </div>
+
+            <div
+              class="project-meta"
+              style="
+                margin-top: 8px;
+                font-size: 0.92rem;
+                color: var(--muted-color);
+              "
+            >
+              <strong>Team:</strong> PhuocPhat1005, PineGithub19
+              (contributors)<br />
+              <strong>Deliverables:</strong> Source, Slides, Report, Video
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Java Chess -->
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/chess.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <!-- GitHub link -->
+                <a
+                  href="https://github.com/thanhto24/Java_Chess"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- YouTube demo link -->
+                <a
+                  href="https://www.youtube.com/watch?v=Pv9wSfjUm2o"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-chess"></i> Game Development
+            </div>
+            <h3>JAVA CHESS</h3>
+            <p>
+              A full-featured chess game built with Java, supporting human vs
+              human and human vs AI gameplay. The project integrates the
+              powerful <b>Stockfish engine</b> for AI moves, includes rules such
+              as <i>castling, pawn promotion, and checkmate detection</i>, and
+              provides a clean graphical interface for an intuitive experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Swing</span>
+              <span class="tech-tag">Stockfish AI</span>
+              <span class="tech-tag">OOP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div
+            class="project-image"
+            style="background-image: url('img/home_def.jpg')"
+          >
+            <div class="project-overlay">
+              <div class="project-links">
+                <!-- GitHub link -->
+                <a
+                  href="https://github.com/PhuocPhat1005/HomeDefender_IoT"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- Video demo link -->
+                <a
+                  href="https://www.youtube.com/watch?v=ZLpqiuz0C70"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">
+              <i class="fas fa-shield-alt"></i> IoT / Embedded System
+            </div>
+            <h3>HomeDefender IoT</h3>
+            <p>
+              A smart home security system integrating a
+              <b>PIR motion sensor</b>, camera, and web interface. It offers
+              multiple alert modes, automatic photo capture, video streaming,
+              and email notifications to ensure complete home protection. Users
+              can control devices, view alerts, and monitor the home remotely
+              with ease.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">ESP32-CAM</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Web Interface</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-action">
+        <a
+          href="https://github.com/thanhto24"
+          class="btn btn-outline"
+          target="_blank"
+        >
+          <span>View All Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-left">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              Ready to bring your next project to life? Let's discuss how we can
+              work together to create something amazing.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <span>thanhtovntmk@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <span>+84706892767</span>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <span>HCMC, Vietnam</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/thanhto24" class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href=" https://www.linkedin.com/in/thanhto24"
+                class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.facebook.com/thanhtto25" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/myzdlznw"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+              <span class="form-bar"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+              <span class="form-bar"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required />
+              <label for="subject">Subject</label>
+              <span class="form-bar"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Your Message</label>
+              <span class="form-bar"></span>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="justify-content: center"
+            >
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <span>Thanh</span>
+          </div>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-right">
+          <p>
+            &copy; 2025 Thanh. Crafted with <i class="fas fa-heart"></i> and
+            lots of coffee.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
