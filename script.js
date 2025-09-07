@@ -424,7 +424,7 @@ function initializeAnimations() {
   }, '-=0.5')
   .from('.contact-method', {
     y: 30,
-    opacity: 0,
+    // opacity: 0,
     duration: 0.6,
     stagger: 0.1,
     ease: 'power2.out'

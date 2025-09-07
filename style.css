@@ -1024,6 +1024,7 @@ body {
   border-radius: 10px;
   border: 1px solid var(--glass-border);
   transition: all 0.3s ease;
+  margin-bottom: 2rem;
 }
 
 .contact-method:hover {
